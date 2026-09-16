@@ -31,8 +31,4 @@ Resumen del rendimiento promedio sobre las instancias reales de prueba (`FORD01`
 
 ## Cómo ejecutar las prácticas
 
-```bash
-# Ejemplo para compilar y ejecutar el módulo memético
-cd src/03_algoritmos_memeticos
-javac Main.java
-java Main -instancia ../../data/FORD01.dat -evaluaciones 5000 -iteracionesTabu 100
+Dentro de la carpeta de cada método existe una carpeta llamada archivos. El archivo `configurador.txt` cuenta con la estructura para ejecutar distintas instancias del problema.
