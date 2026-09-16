@@ -29,6 +29,15 @@ Resumen del rendimiento promedio sobre las instancias reales de prueba (`FORD01`
 
 ---
 
+## Estructura del Proyecto
+
+Cada práctica (`practica02/` y `practica03/`) contiene:
+* `src/`: Código fuente en Java.
+* `archivos/`: Instancias de pruebas (`FORD01`-`FORD04`) y fichero `configurador.txt`.
+* `Memoria.pdf`: Análisis exhaustivo con el diseño algorítmico, pruebas empíricas y estudio comparativo.
+
+---
+
 ## Cómo ejecutar las prácticas
 
 Dentro de la carpeta de cada método existe una carpeta llamada archivos. El archivo `configurador.txt` cuenta con la estructura para ejecutar distintas instancias del problema.
