@@ -1,4 +1,3 @@
-# optimizacion-qap-metaheuristicas
 # Quadratic Assignment Problem (QAP) Optimization - Ford Valencia
 
 Este repositorio contiene la implementación, análisis y comparación de distintas metaheurísticas para resolver el Problema de Asignación Cuadrática (QAP) aplicado a la optimización del flujo de piezas y la distribución de departamentos en la planta de montaje de Ford Valencia.
