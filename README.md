@@ -1,2 +1,39 @@
 # optimizacion-qap-metaheuristicas
-En este repositorio incluyo las prácticas realizadas para la asignatura de metaheurísticas que cursé en el curso académico 25-26 con un compañero
+# Quadratic Assignment Problem (QAP) Optimization - Ford Valencia
+
+Este repositorio contiene la implementación, análisis y comparación de distintas metaheurísticas para resolver el Problema de Asignación Cuadrática (QAP) aplicado a la optimización del flujo de piezas y la distribución de departamentos en la planta de montaje de Ford Valencia.
+
+> Caso de uso: Minimizar el coste total de transporte interno $min \sum F_{ij} \cdot D_{S(i)S(j)}$ donde $F$ es la matriz de flujos entre departamentos y $D$ la matriz de distancias entre localizaciones.
+
+---
+
+## Enfoques e Implementaciones
+
+El problema se aborda de forma incremental mediante tres arquitecturas algorítmicas implementadas en **Java**:
+
+1. `02_algoritmos_evolutivos/` (Algoritmos Genéticos Generacionales):
+   - Población estocástica, selección por torneo, operador de cruce `OX2` y mutación por intercambio `2-opt`.
+2. `03_algoritmos_memeticos/` (Algoritmo Memético Híbrido):
+   - Combinación de evolución poblacional con disparadores de Búsqueda Tabú aplicados periódicamente sobre el individuo élite.
+   - Elitismo absoluto con reinserción explícita.
+
+---
+
+## Comparativa de Rendimiento
+
+Resumen del rendimiento promedio sobre las instancias reales de prueba (`FORD01` a `FORD04`):
+
+| Algoritmo | Desviación Promedio del Óptimo (%) | Tiempo Promedio de Ejecución (s) | Característica Principal |
+| :--- | :---: | :---: | :--- |
+| **Algoritmo Memético (MEM)** | **0.04%** | **~0.13s** | **Mejor equilibrio:** Alta calidad de solución con un tiempo casi instantáneo. |
+| **Genético Generacional (EVOL)** | 0.09% | ~0.86s | Alta exploración estocástica, mayor variabilidad. |
+
+---
+
+## Cómo ejecutar las prácticas
+
+```bash
+# Ejemplo para compilar y ejecutar el módulo memético
+cd src/03_algoritmos_memeticos
+javac Main.java
+java Main -instancia ../../data/FORD01.dat -evaluaciones 5000 -iteracionesTabu 100
