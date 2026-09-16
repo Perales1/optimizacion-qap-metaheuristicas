@@ -10,9 +10,9 @@ Este repositorio contiene la implementación, análisis y comparación de distin
 
 El problema se aborda de forma incremental mediante tres arquitecturas algorítmicas implementadas en **Java**:
 
-1. `02_algoritmos_evolutivos/` (Algoritmos Genéticos Generacionales):
+1. `practica02/` (Algoritmos Genéticos Generacionales):
    - Población estocástica, selección por torneo, operador de cruce `OX2` y mutación por intercambio `2-opt`.
-2. `03_algoritmos_memeticos/` (Algoritmo Memético Híbrido):
+2. `practica03/` (Algoritmo Memético Híbrido):
    - Combinación de evolución poblacional con disparadores de Búsqueda Tabú aplicados periódicamente sobre el individuo élite.
    - Elitismo absoluto con reinserción explícita.
 
