@@ -1,0 +1,16 @@
+archivo = archivos/ford04.dat
+algoritmo = EST
+k = 3
+semillas = 77644797,76447977,64479777,44797776,47977764
+iteraciones = 5000
+posSemilla = 0
+tenencia = 3
+elitismo = 2
+kBest = 3
+kWorst = 3
+operadorCruce = OX2
+probCruce = 0.7
+probMutacion = 0.1
+evaluaciones = 50000
+tamPoblacion = 100
+probGreedy = 0.2
